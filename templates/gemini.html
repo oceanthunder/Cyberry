@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card raspberry-theme">
+        <div class="card-body">
+            <h2 class="card-title text-center">{{ title }}</h2>
+            <hr class="raspberry-divider">
+            <p class="card-text">{{ story }}</p>
+            <div class="moral-section mt-4">
+                <p class="moral-text"><strong>Moral:</strong> {{ moral }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button class="btn raspberry-btn" onclick="window.location.reload();">Another story!</button>
+    </div>
+</div>
+
+{% endblock %}

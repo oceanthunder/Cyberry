@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.info-card h5 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+

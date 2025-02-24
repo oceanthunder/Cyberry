@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4" style="color: #c51d34; font-family: 'Roboto', sans-serif;">System Information</h1>
+    <div class="row">
+        <!-- CPU Info -->
+        <div class="col-md-6 mb-4">
+            <div class="card raspberry-theme">
+                <div class="card-header" style="background-color: #c51d34; color: #ffffff; font-family: 'Roboto', sans-serif;">
+                    CPU Information
+                </div>
+                <div class="card-body">
+                    <p><strong>Usage:</strong> <span class="metric-value">{{ info.cpu_usage }}</span></p>
+                    <p><strong>Load Average:</strong> <span class="metric-value">{{ info.load_avg }}</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Memory Info -->
+        <div class="col-md-6 mb-4">
+            <div class="card raspberry-theme">
+                <div class="card-header" style="background-color: #c51d34; color: #ffffff; font-family: 'Roboto', sans-serif;">
+                    Memory Information
+                </div>
+                <div class="card-body">
+                    <p><strong>Usage:</strong> <span class="metric-value">{{ info.memory_usage }}</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disk Info -->
+        <div class="col-md-6 mb-4">
+            <div class="card raspberry-theme">
+                <div class="card-header" style="background-color: #c51d34; color: #ffffff; font-family: 'Roboto', sans-serif;">
+                    Disk Information
+                </div>
+                <div class="card-body">
+                    <p><strong>Usage:</strong> <span class="metric-value">{{ info.disk_usage }}</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Network Info -->
+        <div class="col-md-6 mb-4">
+            <div class="card raspberry-theme">
+                <div class="card-header" style="background-color: #c51d34; color: #ffffff; font-family: 'Roboto', sans-serif;">
+                    Network Information
+                </div>
+                <div class="card-body">
+                    <p><strong>Sent:</strong> <span class="metric-value">{{ info.network_sent }}</span></p>
+                    <p><strong>Received:</strong> <span class="metric-value">{{ info.network_recv }}</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Uptime -->
+        <div class="col-md-12 mb-4">
+            <div class="card raspberry-theme">
+                <div class="card-header" style="background-color: #c51d34; color: #ffffff; font-family: 'Roboto', sans-serif;">
+                    System Uptime
+                </div>
+                <div class="card-body">
+                    <p><strong>Uptime:</strong> <span class="metric-value">{{ info.uptime }}</span></p>
+                </div>
+            </div>
+        </div>
+
+<!-- Add these sections to your sysinfo.html -->
+
+<!-- Security Status Card -->
+<div class="col-md-12 mb-4">
+    <div class="card raspberry-theme">
+        <div class="card-header" style="background-color: #c51d34; color: #ffffff;">
+            Security Status
+        </div>
+        <div class="card-body">
+            <p><strong>Open Ports:</strong> <span class="metric-value">{{ info.open_ports }}</span></p>
+            <p><strong>Active SSH Sessions:</strong> <span class="metric-value">{{ info.ssh_logins }}</span></p>
+            <p><strong>Rootkit Check:</strong> <span class="metric-value">{{ info.rootkit_check }}</span></p>
+            <p><strong>Last Security Update:</strong> <span class="metric-value">{{ info.last_security_update }}</span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Firewall & Devices Card -->
+<div class="col-md-6 mb-4">
+    <div class="card raspberry-theme">
+        <div class="card-header" style="background-color: #c51d34; color: #ffffff;">
+            Devices
+        </div>
+        <div class="card-body">
+            <p><strong>Connected USB Devices:</strong> <span class="metric-value">{{ info.usb_devices }}</span></p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<!-- Auto-refresh script -->
+<script>
+    // Refresh the page every 5 seconds
+    setTimeout(function() {
+        location.reload();
+    }, 5000);
+</script>
+{% endblock %}

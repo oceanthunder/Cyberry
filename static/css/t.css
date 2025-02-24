@@ -1,0 +1,114 @@
+body {
+    background-color: white;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #c51d34 !important; /* Raspberry Pi red */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(15deg);
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    background-color: black;
+    color: white;
+}
+
+.card-title {
+    color: #c51d34;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.moral-section {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.moral-text {
+    color: #c51d34;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.raspberry-divider {
+    border-top: 2px solid #c51d34;
+    width: 50%;
+    margin: 0 auto 1.5rem auto;
+}
+
+.raspberry-btn, .btn-raspberry {
+    background-color: #c51d34;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.raspberry-btn:hover, .btn-raspberry:hover {
+    background-color: #a3182a;
+    transform: translateY(-3px);
+}
+
+.raspberry-btn:active, .btn-raspberry:active {
+    transform: translateY(0);
+}
+
+.text-center {
+    color: green;
+}
+
+.card-body {
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.8rem;
+    }
+    .card-text, .moral-text {
+        font-size: 1rem;
+    }
+    .raspberry-btn, .btn-raspberry {
+        font-size: 1rem;
+        padding: 8px 25px;
+    }
+}

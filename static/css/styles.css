@@ -1,0 +1,133 @@
+/* Cyber-Raspberry Theme */
+body {
+    background-color: white; /* Deep black for cyberpunk effect */
+    color: #e0e0e0; /* Light gray for contrast */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #c51d34; /* Raspberry Pi red */
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Containers */
+.container {
+    margin-top: 2rem;
+}
+
+/* Cyberpunk Card */
+.card {
+    background-color: #1a1a1a; /* Darker shade for cyber look */
+    border: 1px solid #c51d34;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(255, 0, 0, 0.5);
+}
+
+/* Card Header */
+.card-header {
+    background-color: #111;
+    color: #c51d34;
+    font-weight: bold;
+}
+
+/* Card Title */
+.card-title {
+    color: #c51d34;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* Card Text */
+.card-text {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Moral Section */
+.moral-section {
+    background-color: white; /* Darker moral section */
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.moral-text {
+    color: #c51d34;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Cyberpunk Divider */
+.raspberry-divider {
+    border-top: 2px solid #c51d34;
+    width: 50%;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+/* Cyber-Themed Button */
+.raspberry-btn, .btn-raspberry {
+    background-color: green;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.raspberry-btn:hover, .btn-raspberry:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary, .btn-primary:hover{
+	background-color: green;
+	border: none;
+}
+
+/* Cyber-Green Text */
+.text-center {
+    color: #c51d34;
+    text-shadow: 0 0 1px;
+}
+
+/* Card Body */
+.card-body {
+    color: #e0e0e0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.8rem;
+    }
+    .card-text, .moral-text {
+        font-size: 1rem;
+    }
+    .raspberry-btn, .btn-raspberry {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+}
+

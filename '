@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <!-- Card 1: Gemini -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Bite sized fables</h5>
+                <p class="card-text">Generate a story with a title and moral.</p>
+                <a href="/gemini" class="btn btn-primary">Visit Fables</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2-->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Parental Dashboard</h5>
+                <p class="card-text">Ad blocking and website blocklists</p>
+                <a href="http://192.168.20.95/admin" class="btn btn-primary">Visit Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">System Info</h5>
+                <p class="card-text">View system information like temperature and usage.</p>
+                <a href="/sysinfo" class="btn btn-primary">Visit Info</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

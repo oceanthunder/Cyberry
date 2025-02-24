@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <!-- Card 1: Gemini -->
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Bite-Sized Fables</h5>
+                <img src="/static/images/fables.jpg" alt="Fables Image" class="img-fluid my-3">
+                <p class="card-text">Generate a short story with a moral lesson.</p>
+                <a href="/gemini" class="btn btn-primary">Explore Fables</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Parental Dashboard</h5>
+                <img src="/static/images/dashboard.jpg" alt="Dashboard Image" class="img-fluid my-3">
+                <p class="card-text">Manage ad blocking and website restrictions.</p>
+                <a href="http://192.168.20.95/admin" class="btn btn-primary">Open Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">System Info</h5>
+                <img src="/static/images/system-info.jpg" alt="System Info Image" class="img-fluid my-3">
+                <p class="card-text">Monitor system resources and ports.</p>
+                <a href="/sysinfo" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
